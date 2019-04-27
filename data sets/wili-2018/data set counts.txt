@@ -1,0 +1,5 @@
+arabic : 500
+english : 500
+egyptian arabic : 500
+total count of 1500
+
