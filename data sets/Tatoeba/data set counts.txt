@@ -1,0 +1,8 @@
+﻿arabic : 31924
+english : 1173878
+egyptian arabic : 609
+moroccan arabic : 53
+algerian arabic: 1335
+gulf arabic : 73
+total of 1207872 texts
+
