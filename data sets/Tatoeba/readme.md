@@ -1,5 +1,5 @@
 ```data..txt``` contains the texts of the languages we want to identify each row is a text of a specific language
-``` targets.txt``` contains the target name(the language name) of the corresponding row in the data.txt file the (eg... the first label conrresponds to the first row and so on)
+``` targets.txt``` contains the target name(the language name) of the corresponding row in the ```"data.txt```" file the (eg... the first label conrresponds to the first row and so on)
 the ```"data" binary file contains data.txt but as a list of texts instead of a file of texts , you can load it using load("data") into  your variable like
 ```sh
 x_train = load("```data```")
