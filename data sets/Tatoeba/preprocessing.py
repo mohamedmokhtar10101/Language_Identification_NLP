@@ -47,8 +47,8 @@ def make_file(x_train, y_train, file_name1 = "data.txt", file_name2 = "targets.t
 #save("targets", targets) #it makes file that contains the targets classes of the corresepoding language name as an array of lables
 data = load("data") #load the matriix that contains all languages texts
 targets = load("targets")#load the matrix that contains all languages labels that correspond to every row in the x_train variable already loaded
-make_file(data, targets)
-    
+#make_file(data, targets)
+#print(targets)   
     
     
     
