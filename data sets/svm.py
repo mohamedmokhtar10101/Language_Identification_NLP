@@ -89,7 +89,7 @@ for g in [0.001, 0.01, 0.1, 1]:
         X = vec.fit_transform(train_features_matrices).toarray()  
         model.fit(X, targets)
         Y = vec.transform(test_features_matrices).toarray()  
-        precited_langs = model.predict(X)
+        precited_langs = model.predict(Y)
         acc = accuracy_score(test_targets, precited_langs)
         print('the accurcy of n = ', n, "is ", acc, " when gamma is ", g)
         accuracies.append(acc)
