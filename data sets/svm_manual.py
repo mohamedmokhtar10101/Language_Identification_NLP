@@ -1,5 +1,8 @@
 from sklearn import svm
 from sklearn.metrics import accuracy_score
+from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score
+from sklearn.metrics import f1_score    
 import nltk
 import pickle
 import gzip
@@ -89,7 +92,14 @@ model.fit(X, targets)
 Y = vec.transform(test_features_matrices).toarray()  
 precited_langs = model.predict(Y)
 acc = accuracy_score(test_targets, precited_langs)        
+precision = precision_score(test_targets, precited_langs,  average='micro')
+recall = recall_score(test_targets, precited_langs,  average='micro')
+f1 = f1_score(test_targets, precited_langs,  average='micro')
 print('the accurcy of n = ', n, "is ", acc, " when gamma is ", 0.001)
+print('the precision of n = ', n, "is ", precision, " when gamma is ", 0.001)
+print('the recall of n = ', n, "is ", recall, " when gamma is ", 0.001)
+print('the f1 score  of n = ', n, "is ", f1, " when gamma is ", 0.001)
+
     #    accuracies.append(acc)
    # all_accuracies[g] = accuracies
     
